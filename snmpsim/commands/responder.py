@@ -18,9 +18,9 @@ from pyasn1.compat.octets import null
 from pyasn1.type import univ
 from pysnmp import debug as pysnmp_debug
 from pysnmp import error
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
-from pysnmp.carrier.asyncore.dispatch import AsyncoreDispatcher
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
+from pysnmp.carrier.asyncio.dispatch import AsyncioDispatcher
 from pysnmp.entity import config
 from pysnmp.entity import engine
 from pysnmp.entity.rfc3413 import cmdrsp
@@ -601,7 +601,7 @@ configured automatically based on simulation data file paths relative to
 
     # Start configuring SNMP engine(s)
 
-    transport_dispatcher = AsyncoreDispatcher()
+    transport_dispatcher = AsyncioDispatcher()
 
     transport_dispatcher.registerRoutingCbFun(lambda td, t, d: td)
 

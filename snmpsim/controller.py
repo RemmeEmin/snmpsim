@@ -9,8 +9,8 @@
 
 from pysnmp.proto import rfc1902
 from pysnmp.smi import exval, indices
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
 
 from snmpsim import datafile
 from snmpsim import log

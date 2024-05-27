@@ -15,8 +15,8 @@ import uuid
 from functools import wraps
 
 from pyasn1.type import univ
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
 from pysnmp.entity import engine
 
 from snmpsim import error

@@ -16,9 +16,9 @@ from pyasn1.codec.ber import decoder
 from pyasn1.codec.ber import encoder
 from pyasn1.type import univ
 from pysnmp import debug as pysnmp_debug
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
-from pysnmp.carrier.asyncore.dispatch import AsyncoreDispatcher
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
+from pysnmp.carrier.asyncio.dispatch import AsyncioDispatcher
 from pysnmp.proto import api
 from pysnmp.proto import rfc1902
 from pysnmp.proto import rfc1905
@@ -442,7 +442,7 @@ def main():
     contexts['index'] = data_index_instrum_controller
 
     # Configure socket server
-    transport_dispatcher = AsyncoreDispatcher()
+    transport_dispatcher = AsyncioDispatcher()
 
     transport_index = args.transport_id_offset
     for agent_udpv4_endpoint in args.agent_udpv4_endpoints:

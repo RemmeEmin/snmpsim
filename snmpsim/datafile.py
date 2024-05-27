@@ -11,9 +11,9 @@ import stat
 
 from pyasn1.compat.octets import str2octs
 from pyasn1.type import univ
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
-from pysnmp.carrier.asyncore.dgram import unix
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
+from pysnmp.carrier.asyncio.dgram import unix
 from pysnmp.proto import rfc1902
 from pysnmp.smi import exval
 from pysnmp.smi.error import MibOperationError

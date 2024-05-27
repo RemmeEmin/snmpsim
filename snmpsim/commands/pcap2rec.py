@@ -21,7 +21,7 @@ from pyasn1.codec.ber import decoder
 from pyasn1.error import PyAsn1Error
 from pyasn1.type import univ
 from pysnmp import debug as pysnmp_debug
-from pysnmp.carrier.asyncore.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp
 from pysnmp.error import PySnmpError
 from pysnmp.proto import api
 from pysnmp.proto import rfc1905

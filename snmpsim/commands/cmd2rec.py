@@ -16,8 +16,8 @@ import traceback
 from pyasn1 import debug as pyasn1_debug
 from pyasn1.type import univ
 from pysnmp import debug as pysnmp_debug
-from pysnmp.carrier.asyncore.dgram import udp
-from pysnmp.carrier.asyncore.dgram import udp6
+from pysnmp.carrier.asyncio.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp6
 from pysnmp.entity import engine, config
 from pysnmp.entity.rfc3413 import cmdgen
 from pysnmp.error import PySnmpError

@@ -7,7 +7,7 @@
 # Managed value variation module
 # Send SNMP Notification
 #
-from pysnmp.hlapi.asyncore import *
+from pysnmp.hlapi.asyncio import *
 
 from snmpsim import error
 from snmpsim import log
